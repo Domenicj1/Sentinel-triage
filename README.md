@@ -6,7 +6,7 @@
 ![Python](https://img.shields.io/badge/python-3.11+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-> ⚠️ **Work in progress.** This project is being built in public as a portfolio artifact. See the [Roadmap](#roadmap) for current status.
+> ⚠️ **Work in progress.** This project is being built in public as a portfolio artifact. See the [Roadmap Tracker](#roadmap) for current status.
 
 ## Vision
 
@@ -30,13 +30,13 @@ To keep scope honest, Sentinel Triage explicitly is **not**:
 
 ## Planned Architecture
 
-Raw logs -> parser -> Signature Clusterer -> Claude API -> Structured report ( -> Slack / GitHub / stdin)
+Raw logs -> parser -> Signature Clusterer -> Claude API -> Structured report ( -> Slack / GitHub / stdout)
 
-THe clustering layer exists specifically to reduce LLM token usage on repetitive event streams - a design decision driven by both cost and signal-to-noise concerns. Full architecture notes live in ['docs'/ARCHITECTURE.md](docs/ARCHITECTURE.md) (coming in Stage 7).
+The clustering layer exists specifically to reduce LLM token usage on repetitive event streams - a design decision driven by both cost and signal-to-noise concerns. Full architecture notes live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) (coming in Stage 7).
 
 ## Roadmap
 
-Built in eight stages over roughly nine weeks. See ['docs'/PLAN.md](docs/PLAN.md) for the full plan.
+Built in eight stages over roughly nine weeks. See [docs/PLAN.md](docs/PLAN.md) for the full plan.
 
 - [x] **Stage 0** — Foundation (repo, README, docs scaffolding)
 - [ ] **Stage 1** — Synthetic log generator
@@ -50,19 +50,19 @@ Built in eight stages over roughly nine weeks. See ['docs'/PLAN.md](docs/PLAN.md
 
 ## Tech Stack
 
-**Language:** Python 3.11+
-**LLM:** Anthropic Claude Sonnet
-**Testing:** pytest (planned)
-**Formating:** ruff, black
+- **Language:** Python 3.11+
+- **LLM:** Anthropic Claude Sonnet
+- **Testing:** pytest (planned)
+- **Formatting:** ruff, black
 
-## Liscence
+## Licence
 
-MIT - see [LISCENCE](LISCENCE)
+MIT - see [LICENCE](LICENCE)
 
 
 ## About
 
-Built by Domenic (Dom) Jernigan[https://github.com/Domenicj1] as a portfolio project exploring the intersection of AI and security operations. Feedback welcome via GitHub issues.
+Built by [Domenic (Dom) Jernigan](https://github.com/Domenicj1) as a portfolio project exploring the intersection of AI and security operations. Feedback welcome via GitHub issues.
 
 
 
