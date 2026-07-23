@@ -25,3 +25,6 @@ __pycache__/
 fixtures/*.log
 !fixtures/.gitkeep
 eval/results-*.json
+
+# Local scratch / experimentation
+scratch/
